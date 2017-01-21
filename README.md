@@ -1,6 +1,6 @@
 # Dominion Card Game
 
-(DominionLogo.jpg "Dominion Logo")
+!(DominionLogo.jpg "Dominion Logo")
 
 ### DESCRIPTION:
 This is a web application that simulates the card game Dominion by Rio Grande Games.
