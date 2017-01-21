@@ -1,18 +1,17 @@
-# Dominion Card Game
+# DOMINION
 
 ![Dominion Logo](images/DominionLogo.jpg)
 
-### DESCRIPTION:
-This is a web application that simulates the card game Dominion by Rio Grande Games.
+### Description:
+This is a web application that simulates the card game Dominion published by Rio Grande Games.
 
-### TEAM MEMBERS:
+### Team Members:
 - Heather Conklin ([heath3conk](https://github.com/heath3conk)): VP of Engineering and CTO.
 - James O'Neal ([jamesponeal](https://github.com/jamesponeal)): Associate whiskey drinker and junior cake eater.
 
-### TEAM NORMS:
+### Team Guidelines:
 - Checkins as needed.
 - If you're stuck, ask for help.
 - Trello board will be used to track tasks and progress.
 - Whiskey and chocolate cake breaks are encouraged.
-
 
