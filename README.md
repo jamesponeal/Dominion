@@ -6,8 +6,8 @@
 This is a web application that simulates the card game Dominion by Rio Grande Games.
 
 ### TEAM MEMBERS:
-- Heather Conklin: VP of Engineering and CTO.
-- James O'Neal: Associate whiskey drinker and junior cake eater.
+- Heather Conklin ([heath3conk](https://github.com/heath3conk)): VP of Engineering and CTO.
+- James O'Neal ([jamesponeal](https://github.com/jamesponeal)): Associate whiskey drinker and junior cake eater.
 
 ### TEAM NORMS:
 - Checkins as needed.
