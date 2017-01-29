@@ -26,7 +26,19 @@ Running notes about getting this sucker going...
 - `npm install` fetches the dependencies listed in the auto-generated package.json file
 - `npm install --save-dev nodemon mocha chai supertest jasmine protractor` adds dependencies for tests
 - `npm install --save monk` to read from Mongo database
-- replace the "scripts" section of the `package.json` file with this: "scripts": { "start": "node ./bin/www", "tdd": "nodemon --watch ./ --exec 'mocha test/unit' --delay 1 ./bin/www", "test": "npm run test:wmu && npm run test:unit && npm run test:integration && npm run test:acceptance", "test:acceptance": "NODE_ENV=test protractor test/acceptance/config.js", "test:integration": "NODE_ENV=test mocha test/integration --recursive", "test:unit": "NODE_ENV=test mocha test/unit/ --recursive", "test:wmu": "webdriver-manager update" } This provides the following commands:
+- replace the "scripts" section of the `package.json` file with this:   
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:watch": "nodemon ./bin/www",
+    "tdd": "nodemon --watch ./ --exec 'mocha test/unit' --delay 1 ./bin/www",
+    "test": "npm run test:wmu && npm run test:unit && npm run test:integration && npm run test:acceptance",
+    "test:acceptance": "NODE_ENV=test protractor test/acceptance/config.js",
+    "test:integration": "NODE_ENV=test JASMINE_CONFIG_PATH=./test/integration/jasmine.json jasmine",
+    "test:unit": "NODE_ENV=test JASMINE_CONFIG_PATH=./test/unit/jasmine.json jasmine",
+    "test:wmu": "webdriver-manager update",
+    "knex": "knex"
+  }, 
+  This provides the following commands:
   - `npm test` to run all the tests: unit tests first, then integration tests, then acceptance tests. **Run this first (whenever you start working on the project for the day) to make sure everything is set up correctly. After that, you can run whatever subset of tests you're actually working on.**
   - `npm run tdd` will monitor the project directory and run the unit tests every time a file is updated. (type `rs` in the command line to restart nodemon - may need to restart to see certain changes)
   - `npm run test:unit` to run only the unit tests; also `npm run test:integration` and `npm run test:acceptance`
