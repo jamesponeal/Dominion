@@ -30,4 +30,5 @@ Running notes about getting this sucker going...
   - `npm test` to run all the tests: unit tests first, then integration tests, then acceptance tests. **Run this first (whenever you start working on the project for the day) to make sure everything is set up correctly. After that, you can run whatever subset of tests you're actually working on.**
   - `npm run tdd` will monitor the project directory and run the unit tests every time a file is updated. (type `rs` in the command line to restart nodemon - may need to restart to see certain changes)
   - `npm run test:unit` to run only the unit tests; also `npm run test:integration` and `npm run test:acceptance`
+- `npm install --save method-override` allows you to use PUT and DELETE instead of just GET and POST
   
